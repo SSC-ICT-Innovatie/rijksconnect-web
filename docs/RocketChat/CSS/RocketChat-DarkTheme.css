@@ -41,6 +41,10 @@ input, select, textarea {
 	background-color: #202225;
 }
 
+.rc-table-title {
+	color: #dcddde;
+}
+
 .message .title .is-bot, .message .title .role-tag {
 	background: #40444b;
 }
