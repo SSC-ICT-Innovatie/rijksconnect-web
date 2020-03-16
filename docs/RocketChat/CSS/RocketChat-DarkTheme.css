@@ -37,6 +37,10 @@ input, select, textarea {
 	background-color: #40444b;
 }
 
+.secondary-background-color {
+	background-color: #202225;
+}
+
 .message .title .is-bot, .message .title .role-tag {
 	background: #40444b;
 }
@@ -47,7 +51,7 @@ input, select, textarea {
 
 .rc-header__wrap {
 	height: 45px;
-    padding: 5px;
+	padding: 5px;
 }
 
 .rc-header .rc-button {
@@ -56,19 +60,19 @@ input, select, textarea {
 
 .rc-button {
 	color: #fff;
-    background-color: #7289da;
-    border-radius: 3px;
-    border: none;
+	background-color: #7289da;
+	border-radius: 3px;
+	border: none;
 }
 
 .rc-button--cancel.rc-button--outline {
-    background-color: unset;
-    border: 1px solid;
-    border-color: rgba(240,71,71,.3);
+	background-color: unset;
+	border: 1px solid;
+	border-color: rgba(240,71,71,.3);
 }
 
 .rc-button--cancel.rc-button--outline:hover {
-    border-color: rgb(240,71,71);
+	border-color: rgb(240,71,71);
 }
 
 .rc-popover__title {
