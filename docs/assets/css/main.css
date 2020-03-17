@@ -3777,3 +3777,37 @@ input, select, textarea {
 			}
 
 		}
+
+
+
+
+
+
+
+/**
+
+Nick's hax0rs..s
+
+**/
+
+.nicks-features {
+	display: flex;
+	flex-direction: row;
+}
+.nicks-features li {
+	flex: 0 0 50%;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.nicks-features li h3 {
+	margin-top: 50px;
+}
+
+#steps {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 30px 0;
+}
+#steps li {
+	margin: 0 0 15px 0;
+}
