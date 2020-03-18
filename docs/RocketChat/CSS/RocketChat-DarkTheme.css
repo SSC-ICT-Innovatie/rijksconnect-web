@@ -242,6 +242,14 @@ option {
     color: #dcddde;
 }
 
+.rc-table tbody tr:not(.table-no-click):not(.table-no-pointer):hover {
+    background-color: #1f2329;
+}
+
+.tabs {
+    border-bottom: 2px solid hsla(0,0%,85%,.4);
+}
+
 .hljs {
 	display: block;
 	overflow-x: auto;
