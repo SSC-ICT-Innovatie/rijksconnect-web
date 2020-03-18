@@ -228,6 +228,20 @@ option {
 	color: #dcddde;
 }
 
+.rc-input__title {
+    color: #dcddde;
+}
+
+.rc-switch__text {
+    color: #dcddde;
+}
+
+.rc-tags {
+    border-color: #4f545c;
+    border-radius: 8px;
+    color: #dcddde;
+}
+
 .hljs {
 	display: block;
 	overflow-x: auto;
