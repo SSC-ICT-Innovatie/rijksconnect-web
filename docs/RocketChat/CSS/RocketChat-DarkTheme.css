@@ -7,11 +7,14 @@
 }
 
 .message.new-day::before {
-	background-color: #f04747;
+    background-color: #2f3136;
+    border: solid 1px;
+    border-color: #202225;
+    border-radius: 8px;
 }
 
 .message.new-day::after {
-	border-color: #f04747;
+    border-color: #202225;
 }
 
 .first-unread .body:after {
@@ -96,6 +99,10 @@ input, select, textarea {
 }
 
 .rc-modal__close {
+	color: #f04747;
+}
+
+.contextual-bar__header-close {
 	color: #f04747;
 }
 
@@ -229,25 +236,33 @@ option {
 }
 
 .rc-input__title {
-    color: #dcddde;
+	color: #dcddde;
 }
 
 .rc-switch__text {
-    color: #dcddde;
+	color: #dcddde;
 }
 
 .rc-tags {
-    border-color: #4f545c;
-    border-radius: 8px;
-    color: #dcddde;
+	border-color: #4f545c;
+	border-radius: 8px;
+	color: #dcddde;
 }
 
 .rc-table tbody tr:not(.table-no-click):not(.table-no-pointer):hover {
-    background-color: #1f2329;
+	background-color: #1f2329;
 }
 
 .tabs {
-    border-bottom: 2px solid hsla(0,0%,85%,.4);
+	border-bottom: 2px solid hsla(0,0%,85%,.4);
+}
+.rc-member-list__user.active, .rc-member-list__user {
+	padding: 8px 0;
+	padding-left: 8px;
+}
+
+.rc-member-list__user.active, .rc-member-list__user:hover {
+	background-color: #1f2329;
 }
 
 .hljs {
