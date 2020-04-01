@@ -826,6 +826,10 @@ input, select, textarea {
 	border-color: #4f545c;
 }
 
+.rc-switch-double {
+    color: unset;
+}
+
 .rc-header__wrap {
 	height: 45px;
 	padding: 5px;
