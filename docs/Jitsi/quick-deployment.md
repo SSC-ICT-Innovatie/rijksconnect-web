@@ -1,0 +1,1 @@
+sudo apt-get update && sudo apt-get update && sudo apt-get install docker-ce && git clone https://github.com/jitsi/docker-jitsi-meet && cd docker-jitsi-meet && mkdir -p ~/.jitsi-meet-cfg/{web/letsencrypt,transcripts,prosody,jicofo,jvb} && sudo docker-compose up -d.
