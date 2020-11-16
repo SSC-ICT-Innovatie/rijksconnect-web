@@ -1,26 +1,3 @@
-:root {
-	--legacy-default-action-color: #cecece;
-	--legacy-default-action-contrast: #444;
-	--legacy-primary-background-contrast: #fff;
-	--legacy-primary-action-contrast: #fff;
-	--legacy-secondary-background-contrast: #444;
-	--legacy-secondary-action-contrast: #444;
-	--legacy-selection-background: #89defe;
-	--legacy-success-background: #fff;
-	--legacy-success-border: #e6ffe6;
-	--legacy-error-background: #f6cbd0;
-	--legacy-error-border: #eb8a95;
-	--legacy-error-contrast: #fff;
-	--legacy-pending-background: #fffdf9;
-	--legacy-pending-border: #fee4ad;
-	--legacy-transparent-darkest: rgba(17, 12, 12, 0.5);
-	--legacy-transparent-darker: rgba(0, 0, 0, 0.15);
-	--legacy-transparent-dark: rgba(15, 34, 0, 0.05);
-	--legacy-transparent-light: rgba(255, 255, 255, 0.1);
-	--legacy-transparent-lighter: rgba(255, 255, 255, 0.3);
-	--legacy-transparent-lightest: rgba(255, 255, 255, 0.6)
-}
-
 .content-background-color {
 	background-color: #fff
 }
@@ -346,6 +323,11 @@ input:-webkit-autofill {
 	color: #444
 }
 
+.message.active,
+.message:hover {
+	background-color: rgba(4,4,5,0.07);
+}
+
 .message a i:hover,
 .flex-tab a i:hover,
 .message a[class^="icon-"]:hover,
@@ -436,6 +418,10 @@ input:-webkit-autofill {
 	background-color: #1d74f5
 }
 
+.rc-old .rc-message-box .reply-preview {
+    background-color: rgba(4,4,5,0.07);
+}
+
 .messages-box.selectable .selected {
 	background-color: #89defe
 }
@@ -521,6 +507,14 @@ input:-webkit-autofill {
 .flex-tab-bar .counter {
 	background: #a0a0a0;
 	color: white
+}
+
+.flex-tab__result .attachments__item.active, .flex-tab__result .attachments__item:hover {
+    background-color: #202225;
+}
+
+.flex-tab__result .attachments__name {
+    color: #dcddde;
 }
 
 i.status-online {
@@ -777,14 +771,14 @@ label.required::after {
 }
 
 .message.new-day::before {
-	background-color: #2f3136;
-	border: solid 1px;
-	border-color: #202225;
-	border-radius: 8px;
+    background-color: #2f3136;
+    border: solid 1px;
+    border-color: #202225;
+    border-radius: 8px;
 }
 
 .message.new-day::after {
-	border-color: #202225;
+    border-color: #202225;
 }
 
 .first-unread .body:after {
@@ -798,6 +792,29 @@ label.required::after {
 
 .message-actions {
 	color: #dcddde;
+    background: #36393f;
+    border: 0px;
+    box-shadow:0 0 0 1px rgba(4,4,5,0.15); 
+}
+.message-actions__button:hover, .message-actions__menu:hover {
+    border:0px;
+    color: #dcddde;
+	background:rgba(79,84,92,0.16);
+}
+
+.rcx-\@1g87xs3 {
+    color: #dcddde !important;
+}
+
+.rcx-button--small {
+    background: #36393f;
+    border: 0px;
+    box-shadow:0 0 0 1px rgba(4,4,5,0.15); 
+}
+
+.rcx-button--small:hover {
+    border:0px;
+	background:rgba(79,84,92,0.16);
 }
 
 input, select, textarea {
@@ -824,10 +841,6 @@ input, select, textarea {
 
 .border-component-color {
 	border-color: #4f545c;
-}
-
-.rc-switch-double {
-    color: unset;
 }
 
 .rc-header__wrap {
@@ -907,8 +920,18 @@ input, select, textarea {
 	border-bottom: 1px solid #4f545c;
 }
 
-.contextual-bar {
+.rc-header--room {
+    border-bottom: 1px solid #4f545c;
+}
+
+.contextual-bar__content {
 	background: #2f3136;
+}
+
+.contextual-bar.contextual-bar {
+    -webkit-border-start: 2px solid #4f545c;
+    border-inline-start: 2px solid #4f545c;
+    border-left: solid 2px #4f545c;
 }
 
 .sidebar-light {
@@ -1010,25 +1033,25 @@ option {
 }
 
 .rc-input__title {
-	color: #dcddde;
+    color: #dcddde;
 }
 
 .rc-switch__text {
-	color: #dcddde;
+    color: #dcddde;
 }
 
 .rc-tags {
-	border-color: #4f545c;
-	border-radius: 8px;
-	color: #dcddde;
+    border-color: #4f545c;
+    border-radius: 8px;
+    color: #dcddde;
 }
 
 .rc-table tbody tr:not(.table-no-click):not(.table-no-pointer):hover {
-	background-color: #1f2329;
+    background-color: #1f2329;
 }
 
 .tabs {
-	border-bottom: 2px solid hsla(0,0%,85%,.4);
+    border-bottom: 2px solid hsla(0,0%,85%,.4);
 }
 .rc-member-list__user.active, .rc-member-list__user {
 	padding: 8px 0;
@@ -1124,6 +1147,142 @@ option {
 
 .rc-old code {
 	border-radius: 4px;
+}
+
+.mention-link--me, .message .mention-link--me {
+	color: #f04747 !important;
+}
+
+.mention-link, .message .mention-link:hover {
+    background-color: #dcddde;
+    color: #7289da;
+}
+
+.mention-link, .message .mention-link {
+    background-color: #7289da;
+    color: #dcddde;
+}
+
+.background-component-color {
+    background-color: #7289da;
+}
+
+.color-primary-action-color {
+    color: #dcddde;
+}
+
+.rcx-autocomplete, .rcx-input-box__wrapper, .rcx-select {
+    background-color: #2f3136;
+}
+
+.rcx-input-box+.rcx-input-box__addon, .rcx-input-box+.rcx-select__addon {
+    color: #dcddde;
+}
+
+.rcx-button--ghost, .rcx-button--ghost-danger {
+    color: #f04747;
+}
+
+.rcx-tile {
+    background-color: #18191c;
+}
+
+.rcx-option--focus, .rcx-option:hover {
+    background: rgba(79,84,92,0.16);
+}
+
+.rc-switch-double {
+    color: #dcddde;
+}
+
+.rcx-table {
+    background-color: #2f3136;
+}
+
+.rcx-table--sticky .rcx-table__cell--header, .rcx-table__row {
+	background-color: #2f3136;
+}
+
+.rcx-table__row--action:focus, .rcx-table__row--action:hover {
+    background-color: #202225;
+}
+
+.rcx-table__cell {
+    color: #dcddde;
+}
+
+.rcx-pagination--divider:before {
+    border-bottom: .125rem solid #4f545c;
+}
+
+.rcx-table__cell--header:after {
+    border-bottom: .125rem solid #4f545c;
+}
+
+.rcx-\@txktj6 {
+    background-color: #36393f !important;
+}
+
+.rcx-\@1wm5na {
+    color: #dcddde !important;
+}
+
+.rcx-\@9dy4la {
+    color: #dcddde !important;
+}
+
+.rcx-\@169zms8 {
+	color: #dcddde !important;
+}
+
+.rcx-\@4x6q65 {
+    color: #dcddde !important;
+}
+
+.rcx-\@r3592h {
+    background-color: #2f3136 !important;
+    box-shadow:0 0 0 1px rgba(4,4,5,0.15) !important; 
+    color: #202225 !important;
+    border-radius: 4px !important;
+    border: 1px solid !important;
+}
+
+.rcx-\@lsbmgm {
+    background-color: #2f3136 !important;
+}
+
+.rcx-\@9jfjls {
+    color: #dcddde !important;
+    border-bottom: 2px solid #4f545c !important;
+    background-color: #202225;
+}
+
+.rcx-\@1yhzjdg {
+    border-bottom: 2px solid #4f545c !important;
+}
+
+.rcx-\@2xn2yo {
+    border-bottom: 1px solid #4f545c !important;
+}
+
+.rcx-\@2xn2yo:hover, .rcx-\@2xn2yo:focus {
+    background-color: #202225;
+}
+
+.rcx-\@1usu1xd:hover, .rcx-\@1usu1xd:focus {
+    background-color: #202225;
+}
+
+.rcx-\@16ef2pm {
+    color: #dcddde !important;
+}
+
+.rcx-\@5q3jd6 {
+    color: #dcddde !important;
+}
+
+.rcx-\@1pxufj9 {
+    color: #dcddde !important;
 }
 
 :root {
